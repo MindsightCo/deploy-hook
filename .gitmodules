@@ -1,0 +1,6 @@
+[submodule "vendor/github.com/ereyes01/go-auth0-grant"]
+	path = vendor/github.com/ereyes01/go-auth0-grant
+	url = https://github.com/ereyes01/go-auth0-grant.git
+[submodule "vendor/github.com/pkg/errors"]
+	path = vendor/github.com/pkg/errors
+	url = https://github.com/pkg/errors.git
