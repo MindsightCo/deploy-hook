@@ -50,11 +50,11 @@ func main() {
 		log.Fatalln("commit parameter is required")
 	}
 
-	id := os.Getenv("MINDSIGHT_ID")
-	secret := os.Getenv("MINDSIGHT_SECRET")
+	id := os.Getenv("MINDSIGHT_CLIENT_ID")
+	secret := os.Getenv("MINDSIGHT_CLIENT_SECRET")
 
 	if id == "" || secret == "" {
-		log.Fatalln("Must set env variables ``MINDSIGHT_ID'' and ``MINDSIGHT_SECRET''")
+		log.Fatalln("Must set env variables ``MINDSIGHT_CLIENT_ID'' and ``MINDSIGHT_CLIENT_SECRET''")
 	}
 
 	grant := auth0grant.NewGrant(authURL, &auth0grant.CredentialsRequest{
